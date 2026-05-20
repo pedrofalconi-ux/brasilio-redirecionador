@@ -150,7 +150,7 @@ function LinkCard({ link }: { link: LinkItem }) {
       href={link.href}
       {...externalProps}
       className={`
-        group flex items-center gap-4 w-full px-4 py-4
+        group flex items-center gap-4 w-full px-4 py-4.5
         bg-white rounded-2xl
         card-shadow hover:card-shadow-hover
         active:scale-[0.97] transition-all duration-150
@@ -181,7 +181,7 @@ function LinkCard({ link }: { link: LinkItem }) {
 /* ── Nav ── */
 export function LinksNav() {
   return (
-    <nav className="w-full flex flex-col gap-3" aria-label="Links do restaurante">
+    <nav className="w-full flex flex-col gap-4.5" aria-label="Links do restaurante">
       {links.map((link) => (
         <LinkCard key={link.id} link={link} />
       ))}

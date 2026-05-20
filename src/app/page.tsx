@@ -1,7 +1,6 @@
 import { Header }         from '@/app/components/Header'
 import { ProfileSection } from '@/app/components/ProfileSection'
 import { LinksNav }        from '@/app/components/LinksNav'
-import { ChefSpecial }     from '@/app/components/ChefSpecial'
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <main className="w-full max-w-[480px] flex flex-col items-stretch px-5 pt-8 pb-10">
         <ProfileSection />
         <LinksNav />
-        <ChefSpecial />
       </main>
     </div>
   )
