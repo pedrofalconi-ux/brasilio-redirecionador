@@ -15,7 +15,8 @@ export interface LinkItem {
 export const links: LinkItem[] = [
   {
     id: 'whatsapp',
-    href: '#',
+    href: 'https://chat.whatsapp.com/KIgYIY9JBFZLtXXvas5DmQ?mode=gi_t',
+    external: true,
     label: 'Comunidade WhatsApp',
     subtitle: 'Entre no grupo de clientes',
     icon: 'chat',
