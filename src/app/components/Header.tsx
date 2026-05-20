@@ -2,26 +2,32 @@ import Image from 'next/image'
 
 export function Header() {
   return (
-    <header className="w-full top-0 sticky z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
-      <div className="flex justify-between items-center px-6 py-3 max-w-[480px] mx-auto">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/logo.jpg"
-            alt="Brasilo Restaurante Logo"
-            width={32}
-            height={32}
-            className="h-8 w-auto rounded-full object-cover"
-          />
-          <span className="text-on-surface font-semibold text-lg tracking-tight font-sans">
+    <header className="w-full sticky top-0 z-50 bg-surface/75 backdrop-blur-xl border-b border-outline-variant/15">
+      <div className="flex justify-between items-center px-5 py-3.5 max-w-[480px] mx-auto">
+        {/* Brand */}
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-xl overflow-hidden ring-1 ring-outline-variant/30 shrink-0">
+            <Image
+              src="/logo.jpg"
+              alt="Logo"
+              width={36}
+              height={36}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <span className="text-on-surface font-bold text-[15px] tracking-tight font-sans leading-none">
             Brasilo Restaurante
           </span>
         </div>
+
+        {/* Share button */}
         <button
           id="btn-share"
           aria-label="Compartilhar"
-          className="text-primary hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer"
+          className="w-10 h-10 flex items-center justify-center rounded-full text-primary
+                     hover:bg-primary/8 active:scale-90 transition-all duration-150 cursor-pointer"
         >
-          <span className="material-symbols-outlined">share</span>
+          <span className="material-symbols-outlined" style={{ fontSize: 20 }}>ios_share</span>
         </button>
       </div>
     </header>
