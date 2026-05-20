@@ -49,7 +49,7 @@ export const links: LinkItem[] = [
   },
   {
     id: 'cardapio',
-    href: '/cardapio_gráfica_cropped.pdf',
+    href: '/cardapio.pdf',
     external: true,
     label: 'Ver Cardápio Completo',
     subtitle: 'Todos os pratos e preços',
