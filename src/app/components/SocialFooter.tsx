@@ -1,7 +1,7 @@
 const socialLinks = [
   { id: 'website', href: '#', icon: 'language', label: 'Site oficial' },
   { id: 'email',   href: '#', icon: 'mail',     label: 'E-mail' },
-  { id: 'phone',   href: '#', icon: 'call',     label: 'Telefone' },
+  { id: 'phone',   href: 'tel:+5583991282929', icon: 'call',     label: 'Telefone' },
 ]
 
 export function SocialFooter() {
@@ -35,7 +35,7 @@ export function SocialFooter() {
 
       {/* Brand note */}
       <p className="text-center text-[11px] text-secondary/40 font-body mt-6">
-        © 2025 Brasilo Restaurante · Todos os direitos reservados
+        © 2025 Brasilio Restaurante · Todos os direitos reservados
       </p>
     </footer>
   )

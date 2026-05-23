@@ -17,12 +17,12 @@ const workSans = Work_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Brasilo Restaurante | Links',
+  title: 'Brasilio Restaurante | Links',
   description:
-    'Sabor e conexão em cada prato. Siga o Brasilo Restaurante nas redes sociais, avalie no Google e confira nosso cardápio.',
-  keywords: ['restaurante', 'brasilo', 'cardápio', 'comida brasileira'],
+    'Sabor e conexão em cada prato. Siga o Brasilio Restaurante nas redes sociais, avalie no Google e confira nosso cardápio.',
+  keywords: ['restaurante', 'brasilio', 'cardápio', 'comida brasileira'],
   openGraph: {
-    title: 'Brasilo Restaurante',
+    title: 'Brasilio Restaurante',
     description: 'Sabor e conexão em cada prato',
     type: 'website',
   },

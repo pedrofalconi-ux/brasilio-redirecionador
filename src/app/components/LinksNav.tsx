@@ -9,44 +9,25 @@ export interface LinkItem {
   iconColor: string
   iconFill?: boolean
   variant?: 'default' | 'primary'
+  customBg?: string
+  customShadow?: string
   stagger: number
 }
 
 export const links: LinkItem[] = [
   {
-    id: 'whatsapp',
-    href: 'https://chat.whatsapp.com/KIgYIY9JBFZLtXXvas5DmQ?mode=gi_t',
+    id: 'whatsapp-order',
+    href: 'https://wa.me/5583991282929',
     external: true,
-    label: 'Comunidade WhatsApp',
-    subtitle: 'Entre no grupo de clientes',
+    label: 'Pedidos pelo WhatsApp',
+    subtitle: 'Fazer pedido e falar conosco',
     icon: 'chat',
-    iconBg: '#25D366',
-    iconColor: '#ffffff',
-    iconFill: true,
+    iconBg: '',
+    iconColor: '',
+    variant: 'primary',
+    customBg: 'linear-gradient(135deg, #25D366 0%, #20ba5a 60%, #25D366 100%)',
+    customShadow: '0 4px 20px rgba(37,211,102,0.35), 0 1px 2px rgba(0,0,0,0.10)',
     stagger: 1,
-  },
-  {
-    id: 'google-review',
-    href: 'https://www.google.com/search?sca_esv=a362b3da5b4ff7be&sxsrf=ANbL-n7YKBYA9NpPyh3xs68ytI4azpmdaw:1779055181655&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qObOYXGOnbh7xGtJ1_s7BjgbpsplhfjAtGEy0fu-27Z14HOBpm2FpFB5MRHGWKYyauHuDAMUy300LCCqFpbFeTWwgvGDPUMlJe5Y8SUJEJRJETWseZQ%3D%3D&q=Restaurante+Brasilio+Coment%C3%A1rios&sa=X&ved=2ahUKEwjzs42BqcGUAxW4p5UCHcewG7wQ0bkNegQINBAH&biw=1440&bih=812&dpr=2',
-    external: true,
-    label: 'Avalie no Google',
-    subtitle: 'Deixe sua avaliação',
-    icon: 'star',
-    iconBg: '#FFF3E0',
-    iconColor: '#F59E0B',
-    iconFill: true,
-    stagger: 2,
-  },
-  {
-    id: 'instagram',
-    href: 'https://www.instagram.com/brasiliorestaurante',
-    external: true,
-    label: 'Siga no Instagram',
-    subtitle: '@brasiliorestaurante',
-    icon: 'photo_camera',
-    iconBg: 'linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
-    iconColor: '#ffffff',
-    stagger: 3,
   },
   {
     id: 'cardapio',
@@ -58,7 +39,42 @@ export const links: LinkItem[] = [
     iconBg: '',       // not used in primary variant
     iconColor: '',
     variant: 'primary',
+    stagger: 2,
+  },
+  {
+    id: 'whatsapp',
+    href: 'https://chat.whatsapp.com/KIgYIY9JBFZLtXXvas5DmQ?mode=gi_t',
+    external: true,
+    label: 'Comunidade WhatsApp',
+    subtitle: 'Entre no grupo de clientes',
+    icon: 'chat',
+    iconBg: '#25D366',
+    iconColor: '#ffffff',
+    iconFill: true,
+    stagger: 3,
+  },
+  {
+    id: 'google-review',
+    href: 'https://www.google.com/search?sca_esv=a362b3da5b4ff7be&sxsrf=ANbL-n7YKBYA9NpPyh3xs68ytI4azpmdaw:1779055181655&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qObOYXGOnbh7xGtJ1_s7BjgbpsplhfjAtGEy0fu-27Z14HOBpm2FpFB5MRHGWKYyauHuDAMUy300LCCqFpbFeTWwgvGDPUMlJe5Y8SUJEJRJETWseZQ%3D%3D&q=Restaurante+Brasilio+Coment%C3%A1rios&sa=X&ved=2ahUKEwjzs42BqcGUAxW4p5UCHcewG7wQ0bkNegQINBAH&biw=1440&bih=812&dpr=2',
+    external: true,
+    label: 'Avalie no Google',
+    subtitle: 'Deixe sua avaliação',
+    icon: 'star',
+    iconBg: '#FFF3E0',
+    iconColor: '#F59E0B',
+    iconFill: true,
     stagger: 4,
+  },
+  {
+    id: 'instagram',
+    href: 'https://www.instagram.com/brasiliorestaurante',
+    external: true,
+    label: 'Siga no Instagram',
+    subtitle: '@brasiliorestaurante',
+    icon: 'photo_camera',
+    iconBg: 'linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+    iconColor: '#ffffff',
+    stagger: 5,
   },
 ]
 
@@ -112,8 +128,8 @@ function LinkCard({ link }: { link: LinkItem }) {
           animate-fade-slide-in stagger-${link.stagger}
         `}
         style={{
-          background: 'linear-gradient(135deg, #ff3b30 0%, #ff5f54 60%, #ff3b30 100%)',
-          boxShadow: '0 4px 20px rgba(255,59,48,0.40), 0 1px 2px rgba(0,0,0,0.10)',
+          background: link.customBg || 'linear-gradient(135deg, #ff3b30 0%, #ff5f54 60%, #ff3b30 100%)',
+          boxShadow: link.customShadow || '0 4px 20px rgba(255,59,48,0.40), 0 1px 2px rgba(0,0,0,0.10)',
         }}
       >
         {/* Icon bubble */}

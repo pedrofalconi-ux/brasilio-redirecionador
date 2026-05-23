@@ -1,6 +1,6 @@
-# 🍽️ Brasilo Restaurante — Bio Links
+# 🍽️ Brasilio Restaurante — Bio Links
 
-> Página de bio links (estilo Linktree) para o **Brasilo Restaurante**, construída com Next.js 16, Tailwind CSS v4 e hospedada na Vercel.
+> Página de bio links (estilo Linktree) para o **Brasilio Restaurante**, construída com Next.js 16, Tailwind CSS v4 e hospedada na Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pedrofalconi-ux/brasilio-redirecionador)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
@@ -100,7 +100,7 @@ brasilio-redirecionador/
 
 ## 🎨 Design
 
-O design foi gerado via **Google Stitch** e convertido para componentes React. Utiliza o sistema de cores do Material Design 3 com a identidade visual do Brasilo Restaurante.
+O design foi gerado via **Google Stitch** e convertido para componentes React. Utiliza o sistema de cores do Material Design 3 com a identidade visual do Brasilio Restaurante.
 
 ### Paleta de cores
 
@@ -138,4 +138,4 @@ Ou conecte o repositório diretamente no [dashboard da Vercel](https://vercel.co
 
 ## 📄 Licença
 
-Projeto privado — Brasilo Restaurante © 2025. Todos os direitos reservados.
+Projeto privado — Brasilio Restaurante © 2025. Todos os direitos reservados.
